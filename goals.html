@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>X Growth OS — Goals</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Goals</h1>
+  <span class="badge">Goals</span>
+</header>
+
+<div class="container">
+
+  <section class="block">
+    <div class="chart-box">
+      <h3>Tambah Goal Baru</h3>
+
+      <div class="form-group">
+        <label>Nama Goal</label>
+        <input type="text" id="inpGoalName" placeholder="Reach 1,000 followers">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Tipe Goal</label>
+          <select id="inpGoalType">
+            <option value="followers">Followers</option>
+            <option value="impressions">Impressions</option>
+            <option value="custom">Custom (manual progress)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Target</label>
+          <input type="number" id="inpGoalTarget" placeholder="1000">
+        </div>
+      </div>
+
+      <button id="btnAddGoal" class="btn-primary">Tambah Goal</button>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Goal Aktif</h2>
+    <div id="goalList"></div>
+  </section>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/goals.js"></script>
+</body>
+</html>

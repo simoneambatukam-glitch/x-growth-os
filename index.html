@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>X Growth OS — Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>X Growth OS</h1>
+  <span class="badge">Dashboard</span>
+</header>
+
+<div class="container">
+
+  <div id="statGrid" class="stat-grid"></div>
+
+  <section class="block">
+    <h2>Insight</h2>
+    <div id="insightCards"></div>
+  </section>
+
+  <section class="block">
+    <h2>Charts</h2>
+    <div class="chart-box">
+      <h3>Follower Growth</h3>
+      <canvas id="chartFollowers" height="160"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>Impression Growth</h3>
+      <canvas id="chartImpressions" height="160"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>Engagement Growth (Likes + Reposts + Replies)</h3>
+      <canvas id="chartEngagement" height="160"></canvas>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="js/db.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

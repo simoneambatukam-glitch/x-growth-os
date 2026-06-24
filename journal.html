@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>X Growth OS — Journal</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Daily Journal</h1>
+  <span class="badge">Journal</span>
+</header>
+
+<div class="container">
+
+  <section class="block">
+    <div class="chart-box">
+      <h3>Tambah / Edit Entri</h3>
+
+      <div class="form-group">
+        <label>Tanggal</label>
+        <input type="date" id="inpDate">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Followers</label>
+          <input type="number" id="inpFollowers" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label>Impressions</label>
+          <input type="number" id="inpImpressions" placeholder="0">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Likes</label>
+          <input type="number" id="inpLikes" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label>Reposts</label>
+          <input type="number" id="inpReposts" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label>Replies</label>
+          <input type="number" id="inpReplies" placeholder="0">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Topik yang Diposting Hari Ini</label>
+        <input type="text" id="inpTopics" placeholder="Geopolitics, AI, Business (pisahkan koma)">
+      </div>
+
+      <div class="form-group">
+        <label>Catatan Tweet</label>
+        <textarea id="inpNotes" rows="3" placeholder="Posted 3 tweets. Satu tweet tentang AI performa di atas ekspektasi."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Observasi</label>
+        <textarea id="inpObservations" rows="2" placeholder="Apa yang lu pelajari hari ini?"></textarea>
+      </div>
+
+      <button id="btnSave" class="btn-primary">Simpan Entri</button>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Riwayat Entri</h2>
+    <div id="entryList"></div>
+  </section>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/journal.js"></script>
+</body>
+</html>

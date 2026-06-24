@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>X Growth OS — Content Database</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Content Database</h1>
+  <span class="badge">Tweets</span>
+</header>
+
+<div class="container">
+
+  <section class="block">
+    <div class="chart-box">
+      <h3>Tambah Tweet</h3>
+
+      <div class="form-group">
+        <label>Tweet Text</label>
+        <textarea id="inpText" rows="3" placeholder="Isi tweet lu..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Topik</label>
+          <input type="text" id="inpTopic" placeholder="AI, Geopolitics, Business...">
+        </div>
+        <div class="form-group">
+          <label>Tanggal</label>
+          <input type="date" id="inpDate">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Impressions</label>
+          <input type="number" id="inpImpressions" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label>Likes</label>
+          <input type="number" id="inpLikes" placeholder="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Reposts</label>
+          <input type="number" id="inpReposts" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label>Replies</label>
+          <input type="number" id="inpReplies" placeholder="0">
+        </div>
+      </div>
+
+      <button id="btnSaveTweet" class="btn-primary">Simpan Tweet</button>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Ringkasan</h2>
+    <div id="summaryCards"></div>
+  </section>
+
+  <section class="block">
+    <h2>Performa per Topik</h2>
+    <div id="topicTable"></div>
+  </section>
+
+  <section class="block">
+    <h2>Semua Tweet</h2>
+    <div id="tweetList"></div>
+  </section>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/content.js"></script>
+</body>
+</html>

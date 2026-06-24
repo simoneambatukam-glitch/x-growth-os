@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>X Growth OS — AI Coach</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>AI Growth Coach</h1>
+  <span class="badge">Coach</span>
+</header>
+
+<div class="container">
+
+  <section class="block" id="coachIntro">
+    <div class="chart-box" style="border-color: var(--blue);">
+      <h3>🧠 Ringkasan dari Coach</h3>
+      <p id="coachSummary" style="font-size:14px; line-height:1.6; color:var(--text);"></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Insight Utama</h2>
+    <div id="insightList"></div>
+  </section>
+
+  <section class="block">
+    <h2>Rekomendasi</h2>
+    <div id="recoList"></div>
+  </section>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/coach.js"></script>
+</body>
+</html>
